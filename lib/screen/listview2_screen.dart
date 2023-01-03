@@ -11,6 +11,8 @@ class Listview2Screen extends StatelessWidget {
         title: const Center(
           child: Text('Listview Tipo 2'),
         ),
+        elevation: 0,
+        backgroundColor: Colors.indigo,
       ),
 
       // ListView.builder() doesn't have separatorBuilder
@@ -18,7 +20,9 @@ class Listview2Screen extends StatelessWidget {
         itemBuilder: (context, index) => ListTile(
           title: Text(games[index]),
           leading: const Icon(Icons.gamepad_rounded),
+          iconColor: Colors.blue,
           trailing: const Icon(Icons.arrow_forward_ios_rounded),
+          onTap: () {},
         ),
         separatorBuilder: (_, __) => const Divider(),
         itemCount: games.length,
