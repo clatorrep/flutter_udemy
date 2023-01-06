@@ -25,6 +25,18 @@ class AppRouts {
       name: 'Listview 2',
       screen: const Listview2Screen(),
     ),
+    MenuOption(
+      route: 'card',
+      icon: Icons.credit_card,
+      name: 'Card Widget',
+      screen: const CardScreen(),
+    ),
+    MenuOption(
+      route: 'alert',
+      icon: Icons.notification_important_outlined,
+      name: 'Alert Widget',
+      screen: const AlertScreen(),
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRouts() {
