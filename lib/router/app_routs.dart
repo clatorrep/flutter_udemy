@@ -8,12 +8,6 @@ class AppRouts {
 
   static final menuOptions = <MenuOption>[
     MenuOption(
-      route: 'home',
-      icon: Icons.home_filled,
-      name: 'Home',
-      screen: const HomeScreen(),
-    ),
-    MenuOption(
       route: 'listview1',
       icon: Icons.list_alt_rounded,
       name: 'Listview 1',
@@ -42,6 +36,12 @@ class AppRouts {
       icon: Icons.supervised_user_circle_outlined,
       name: 'Circle Avatar',
       screen: const AvatarScreen(),
+    ),
+    MenuOption(
+      route: 'animated',
+      icon: Icons.screen_share_outlined,
+      name: 'Animated Screen',
+      screen: const AnimatedScreen(),
     ),
   ];
 
