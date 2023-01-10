@@ -21,7 +21,7 @@ class AvatarScreen extends StatelessWidget {
         child: CircleAvatar(
           maxRadius: 110,
           backgroundColor: Theme.of(context).primaryColorDark,
-          backgroundImage: NetworkImage(
+          backgroundImage: const NetworkImage(
               'https://i.pinimg.com/originals/3d/11/7a/3d117a9cc580f6367046a4d79c9600a9.png'),
         ),
       ),
